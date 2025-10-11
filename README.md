@@ -26,10 +26,10 @@ This repository shows how to build a vector search solution using Elasticsearch.
 2. Run Elasticsearch locally (via Docker):
 
     ```bash
-    docker run -d -p 9200:9200 -e "discovery.type=single-node" elasticsearch:8.13.0
+    docker-compose up -d
     ```
 
-3. Update your OpenAI API keys and endpoint in the script (from Azure AI Foundry).
+3. This repo uses the Azure AI Foundry pretrained model text-embedding-3-small, so please ensure you have set up your Azure OpenAI endpoint and API keys accordingly
 
 4. Run the provided notebook to:
 - Generate embeddings for your movie descriptions  
